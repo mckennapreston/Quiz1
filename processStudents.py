@@ -58,6 +58,9 @@ student_dict = {
     "901234567": "3.80",
 }
 
+for record in students_file 
+    StudentID = 
+
 # use a loop to iterate through each row of the file
 
 # check if the GPA is below 3.0. If so, write the record to the outfile
