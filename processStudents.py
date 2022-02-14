@@ -43,29 +43,29 @@ next(students_file)
 
 student_dict = {
     "stud_id": [
-        ["firstname"],
-        ["lastname"],
-        ["major"],
-        ["classification"],
-        ["gpa"],
+        {"firstname"},
+        {"lastname"},
+        {"major"},
+        {"classification"},
+        {"gpa"},
     ]
 }
 
 
 # use a loop to iterate through each row of the file
 outfile = open("processedStudents.csv", "w")
-
+outfile.write("firstname, lastname, major, classification, gpa\n")
 for l in student_dict["stud_id"]:
     outfile.write(
-        (l["firstname"])
+        ["firstname"]
         + ","
-        + (l["lastname"])
+        + ["lastname"]
         + ","
-        + (l["major"])
+        + ["major"]
         + ","
-        + (l["classification"])
+        + ["classification"]
         + ","
-        + (l["gpa"])
+        + str["gpa"]
         + "\n"
     )
 
